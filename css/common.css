@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* task 1 */
+#categories {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background: #f6f6fe;
+  padding: 20px;
+  border-radius: 8px;
+  width: 392px;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item ul li {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* task 6 */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 32px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #f6f6fe;
+  width: 486px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#controls button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#controls button[data-create] {
+  background-color: #4a72f2;
+  width: 120px;
+  height: 40px;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  background-color: #f25454;
+  width: 120px;
+  height: 40px;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  width: 486px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+#boxes .box {
+  width: 30px;
+  height: 30px;
+  background-color: lightblue;
+}
+
+#boxes .box:nth-child(2) {
+  background-color: #90c2e7;
+  width: 40px;
+  height: 40px;
+}
+
+#boxes .box:nth-child(3) {
+  background-color: #b2e1d0;
+  width: 50px;
+  height: 50px;
+}
+
+#boxes .box:nth-child(4) {
+  background-color: #d6e9dc;
+  width: 60px;
+  height: 60px;
+}
+
+#boxes .box:nth-child(5) {
+  background-color: #93b9a9;
+  width: 70px;
+  height: 70px;
+}
+
+/* task 4 */
+
+.login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 408px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form input:hover {
+  border: 1px solid #000000;
+}
+
+.login-form button {
+  display: block;
+  width: 86px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #357ae8;
+}
+
+/* task 3 */
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+#name-output {
+  font-weight: bold;
+}
+
+/* task 5 */
+
+.widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.widget p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.widget .change-color {
+  background-color: #4a7aff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget .change-color:hover {
+  background-color: #3b62d3;
+}
+
+/* task 2 */
+
+ul.gallery {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as necessary */
+  width: 1128px;
+}
+
+ul.gallery li {
+  width: calc(33.33% - 10px); /* Adjust spacing and width as necessary */
+  margin-bottom: 20px; /* Adjust vertical spacing between rows */
+  text-align: center;
+}
+
+ul.gallery li img {
+  max-width: 100%;
+  height: auto;
+  width: 360px;
+  height: 300px;
+}
